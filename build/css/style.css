@@ -1,3 +1,46 @@
+.navbar {
+  background-color: #1190cd;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: 56px;
+}
+.navbar ul,
+.navbar .left-navbar {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.navbar h1 {
+  background: url(https://cdn1.vivareal.com/p/1-ba36604/v/static/app/svg/styleguide/logo/vivareal-5bcdffca.svg) no-repeat 0 44%;
+  margin: auto 1.5rem auto 0;
+  width: 148px;
+  height: 24px;
+}
+.navbar h1:hover {
+  cursor: pointer;
+}
+.navbar li {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 100%;
+  padding: 0 1rem;
+}
+.navbar li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar a {
+  display: inline-block;
+  line-height: 56px;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
