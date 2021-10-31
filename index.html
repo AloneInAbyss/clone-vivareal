@@ -26,179 +26,125 @@
     </nav>
 
     <main>
-      <div class="container">
-        <nav class="breadcrumb">
-          <ul>
-            <li><a href="#">Viva Real</a></li>
-            <li>Venda</li>
-          </ul>
-        </nav>
+      <section class="container">
+        <aside>
+          <form id="form-filter">
+            <div class="form-input">
+              <label for="text__location">Localização do Imóvel</label>
+              <input type="text" id="text__location" placeholder="Digite uma rua, bairro ou cidade" />
+            </div>
+            <div class="form-input">
+              <label>Imóvel com</label>
+              <div class="switcher">
+                <input type="checkbox" id="checkbox__tour-and-videos" />
+                <label for="checkbox__tour-and-videos">Tour Virtual ou Vídeos</label>
+              </div>
+            </div>
+            <div class="form-input">
+              <label for="">Tipo de Imóvel</label>
+              <select id="select__type" disabled="disabled">
+                <option>Mostrar todos</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <div>
+                <label for="text__min_price">Preço Mínimo</label>
+                <label for="text__max_price">Preço Máximo</label>
+              </div>
+              <div>
+                <div>
+                  <span>R$</span>
+                  <input type="text" id="text__min_price" />
+                </div>
+                <hr>
+                <div>
+                  <span>R$</span>
+                  <input type="text" id="text__max_price" />
+                </div>
+              </div>
+            </div>
+            <div class="form-input">
+              <label>Número de Quartos</label>
+              <button>1+</button>
+              <button>2+</button>
+              <button>3+</button>
+              <button>4+</button>
+              <button>5+</button>
+            </div>
+          </form>
+
+          <form id="form-subfilter">
+            <div class="form-input">
+              <div>
+                <label for="text__min_area">Área Mínima</label>
+                <label for="text__max_area">Área Máxima</label>
+              </div>
+              <div>
+                <div>
+                  <input type="text" id="text__min_price" />
+                  <span>m²</span>
+                </div>
+                <hr>
+                <div>
+                  <input type="text" id="text__max_price" placeholder="ilimitada" />
+                  <span>m²</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-input">
+              <label>Número de Vagas na Garagem</label>
+              <button>1+</button>
+              <button>2+</button>
+              <button>3+</button>
+              <button>4+</button>
+              <button>5+</button>
+            </div>
+            <div class="form-input">
+              <label>Número de Banheiros</label>
+              <button>1+</button>
+              <button>2+</button>
+              <button>3+</button>
+              <button>4+</button>
+              <button>5+</button>
+            </div>
+          </form>
+        </aside>
 
         <section>
-          <aside>
-            <form id="form-filter">
-              <div class="form-input">
-                <label for="text__location">Localização do Imóvel</label>
-                <input type="text" id="text__location" placeholder="Digite uma rua, bairro ou cidade" />
+          <nav>
+            <ul>
+              <li><a href="#">Comprar</a></li>
+              <li><a href="#">Alugar</a></li>
+              <li><a href="#">Imóveis Novos</a></li>
+              <li><a href="#">Best Friday</a></li>
+            </ul>
+          </nav>
+          <p><b>1.600.956</b> Imóveis à venda em São Paulo - SP</p>
+          <p>São Paulo - SP <span>x</span></p>
+          <div class="card">
+            <img src="" alt="">
+            <div class="card-text">
+              <p>Avenida Mofarrej, 275 - Vila Leopoldina, São Paulo - SP</p>
+              <p>Apartamento com 3 Quartos à Venda, 121m²</p>
+              <div>
+                <p>121 m²</p>
+                <p>3 Quartos</p>
+                <p>4 Banheiros</p>
+                <p>2 Vagas</p>
               </div>
-              <div class="form-input">
-                <label>Imóvel com</label>
-                <div class="switcher">
-                  <input type="checkbox" id="checkbox__tour-and-videos" />
-                  <label for="checkbox__tour-and-videos">Tour Virtual ou Vídeos</label>
-                </div>
+              <div>
+                <p>Ar-condicionado</p>
+                <p>Quadra poliesportiva</p>
+                <p>Spa</p>
+                <p>Salão de festas</p>
+                <p>Elevador</p>
               </div>
-              <div class="form-input">
-                <label for="">Tipo de Imóvel</label>
-                <select id="select__type" disabled="disabled">
-                  <option>Mostrar todos</option>
-                </select>
-              </div>
-              <div class="form-input">
-                <div>
-                  <label for="text__min_price">Preço Mínimo</label>
-                  <label for="text__max_price">Preço Máximo</label>
-                </div>
-                <div>
-                  <div>
-                    <span>R$</span>
-                    <input type="text" id="text__min_price" />
-                  </div>
-                  <hr>
-                  <div>
-                    <span>R$</span>
-                    <input type="text" id="text__max_price" />
-                  </div>
-                </div>
-              </div>
-              <div class="form-input">
-                <label>Número de Quartos</label>
-                <button>1+</button>
-                <button>2+</button>
-                <button>3+</button>
-                <button>4+</button>
-                <button>5+</button>
-              </div>
-            </form>
-
-            <form id="form-subfilter">
-              <div class="form-input">
-                <div>
-                  <label for="text__min_area">Área Mínima</label>
-                  <label for="text__max_area">Área Máxima</label>
-                </div>
-                <div>
-                  <div>
-                    <input type="text" id="text__min_price" />
-                    <span>m²</span>
-                  </div>
-                  <hr>
-                  <div>
-                    <input type="text" id="text__max_price" placeholder="ilimitada" />
-                    <span>m²</span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-input">
-                <label>Número de Vagas na Garagem</label>
-                <button>1+</button>
-                <button>2+</button>
-                <button>3+</button>
-                <button>4+</button>
-                <button>5+</button>
-              </div>
-              <div class="form-input">
-                <label>Número de Banheiros</label>
-                <button>1+</button>
-                <button>2+</button>
-                <button>3+</button>
-                <button>4+</button>
-                <button>5+</button>
-              </div>
-              <div class="form-input">
-                <label>Lazer e Esporte</label>
-
-                <input type="checkbox" name="" id="ckb-gym">
-                <label for="ckb-gym">Academia</label>
-
-                <input type="checkbox" name="" id="ckb-grill">
-                <label for="ckb-grill">Churrasqueira</label>
-
-                <input type="checkbox" name="" id="ckb-movie-theater">
-                <label for="ckb-movie-theater">Cinema</label>
-
-                <input type="checkbox" name="" id="ckb-gourmet-area">
-                <label for="ckb-gourmet-area">Espaço gourmet</label>
-
-                <input type="checkbox" name="" id="ckb-green-area">
-                <label for="ckb-green-area">Espaço Verde / Parque</label>
-              </div>
-              <div class="form-input">
-                <label>Comodidades e Serviços</label>
-
-                <input type="checkbox" name="" id="ckb-animals">
-                <label for="ckb-animals">Aceita Animais</label>
-
-                <input type="checkbox" name="" id="ckb-heater">
-                <label for="ckb-heater">Aquecimento</label>
-
-                <input type="checkbox" name="" id="ckb-air-conditioning">
-                <label for="ckb-air-conditioning">Ar-condicionado</label>
-
-                <input type="checkbox" name="" id="ckb-internet">
-                <label for="ckb-internet">Conexão à internet</label>
-
-                <input type="checkbox" name="" id="ckb-deposit">
-                <label for="ckb-deposit">Depósito</label>
-              </div>
-              <div class="form-input">
-                <label>Segurança</label>
-
-                <input type="checkbox" name="" id="ckb-security-circuit">
-                <label for="ckb-security-circuit">Circuito de Segurança</label>
-
-                <input type="checkbox" name="" id="ckb-gated-community">
-                <label for="ckb-gated-community">Condimínio Fechado</label>
-
-                <input type="checkbox" name="" id="ckb-intercom">
-                <label for="ckb-intercom">Interfone</label>
-
-                <input type="checkbox" name="" id="ckb-24h-security">
-                <label for="ckb-24h-security">Segurança 24h</label>
-
-                <input type="checkbox" name="" id="ckb-alarm">
-                <label for="ckb-alarm">Sistema de alarme</label>
-
-                <input type="checkbox" name="" id="ckb-vigilant">
-                <label for="ckb-vigilant">Vigia</label>
-              </div>
-              <div class="form-input">
-                <label>Cômodos</label>
-
-                <input type="checkbox" name="" id="ckb-service-area">
-                <label for="ckb-service-area">Área de Serviço</label>
-
-                <input type="checkbox" name="" id="ckb-kitchen">
-                <label for="ckb-kitchen">Cozinha</label>
-
-                <input type="checkbox" name="" id="ckb-office">
-                <label for="ckb-office">Escritório</label>
-
-                <input type="checkbox" name="" id="ckb-gourmet">
-                <label for="ckb-gourmet">Varanda</label>
-
-                <input type="checkbox" name="" id="ckb-gourmet-balcony">
-                <label for="ckb-gourmet-balcony">Varanda Gourmet</label>
-              </div>
-              <div class="form-input">
-                <label for="text__search">O que mais você busca?</label>
-                <input type="text" id="text__search" placeholder="Ex: permuta, mobiliado..." />
-                <button>+</button>
-              </div>
-            </form>
-          </aside>
+              <p>R$ 1.270.000</p>
+              <p>Condomínio: R$ 850</p>
+            </div>
+          </div>
         </section>
-      </div>
+      </section>
     </main>
 
     <script src="./src/js/main.js"></script>
