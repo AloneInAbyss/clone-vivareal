@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2.5rem;
-  height: 56px;
+  height: 3.5rem;
 }
 .navbar ul,
 .navbar .left-navbar {
@@ -18,8 +18,8 @@
 .navbar h1 {
   background: url(https://cdn1.vivareal.com/p/1-ba36604/v/static/app/svg/styleguide/logo/vivareal-5bcdffca.svg) no-repeat 0 44%;
   margin: auto 1.5rem auto 0;
-  width: 148px;
-  height: 24px;
+  width: 8rem;
+  height: 1.5rem;
 }
 .navbar h1:hover {
   cursor: pointer;
@@ -36,7 +36,7 @@
 }
 .navbar a {
   display: inline-block;
-  line-height: 56px;
+  line-height: 3.5rem;
 }
 
 body {
