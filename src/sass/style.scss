@@ -1,5 +1,18 @@
 @use 'navbar';
+@use 'aside';
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 3rem;
+  max-width: 1300px;
+}
+
+.search-result {
+  padding: 35px;
 }
