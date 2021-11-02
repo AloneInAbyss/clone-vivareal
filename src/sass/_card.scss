@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 1.5rem;
+
+  .photo {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .card-text {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1.2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .subtitle {
+    color: #888;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .card-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+
+  .condominium-fee {
+    font-size: 0.9rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .logo {
+    max-height: 3rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+
+  p {
+    padding-right: 1rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.ammenities {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+  color: #888;
+  overflow-x: hidden;
+
+  p {
+    padding: 0.3rem;
+    background-color: #eee;
+    margin-right: 0.7rem;
+    border-radius: 15px;
+  }
+}
