@@ -217,6 +217,7 @@
   margin-bottom: 1.5rem;
 }
 .card .photo {
+  min-width: 350px;
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -277,7 +278,7 @@
   font-weight: 600;
 }
 
-.ammenities {
+.amenities {
   display: flex;
   flex-flow: row nowrap;
   padding-bottom: 1rem;
@@ -285,7 +286,7 @@
   color: #888;
   overflow-x: hidden;
 }
-.ammenities p {
+.amenities p {
   padding: 0.3rem;
   background-color: #eee;
   margin-right: 0.7rem;
