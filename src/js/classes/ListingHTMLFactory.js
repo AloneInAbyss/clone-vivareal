@@ -24,14 +24,15 @@ export default class ListingHTMLFactory {
     this.amenities = amenities
     this.price = price
     this.condominiumFee = condominiumFee
-    this.logo = undefined
+    this.logo =
+      'https://cdn1.vivareal.com/p/1-ba36604/v/static/app/img/publisher-undefined.png'
 
-    const searchResult = document.querySelector('.search-result')
+    const cardGroup = document.querySelector('.card-group')
 
     this.createNode.bind(this)
     this.listingHTML = this.createNode()
 
-    searchResult.appendChild(this.listingHTML)
+    cardGroup.appendChild(this.listingHTML)
   }
 
   createNode() {

@@ -329,6 +329,7 @@ main {
   margin-bottom: 1.5rem;
 }
 .search-result .properties-location p {
+  text-transform: capitalize;
   padding: 0.35rem;
   padding-left: 1rem;
   padding-right: 1rem;
