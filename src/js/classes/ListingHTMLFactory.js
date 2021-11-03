@@ -151,21 +151,29 @@ export default class ListingHTMLFactory {
 
     const div = document.createElement('div')
 
-    const e_23 = document.createElement('p')
-    e_23.setAttribute('class', 'price')
-    e_23.appendChild(document.createTextNode(`R$ ${price}`))
+    const pPrice = document.createElement('p')
+    pPrice.setAttribute('class', 'price')
+    pPrice.appendChild(
+      document.createTextNode(`R$ ${parseInt(price).toLocaleString('pt-BR')}`)
+    )
 
-    div.appendChild(e_23)
+    div.appendChild(pPrice)
 
-    const pCondominiumFee = document.createElement('p')
-    pCondominiumFee.setAttribute('class', 'condominium-fee')
-    pCondominiumFee.appendChild(document.createTextNode('Condomínio: '))
+    if (condominiumFee) {
+      const pCondominiumFee = document.createElement('p')
+      pCondominiumFee.setAttribute('class', 'condominium-fee')
+      pCondominiumFee.appendChild(document.createTextNode('Condomínio: '))
 
-    const span = document.createElement('span')
-    span.appendChild(document.createTextNode(`R$ ${condominiumFee}`))
-    pCondominiumFee.appendChild(span)
+      const span = document.createElement('span')
+      span.appendChild(
+        document.createTextNode(
+          `R$ ${parseInt(condominiumFee).toLocaleString('pt-BR')}`
+        )
+      )
+      pCondominiumFee.appendChild(span)
 
-    div.appendChild(pCondominiumFee)
+      div.appendChild(pCondominiumFee)
+    }
 
     footerCardFooter.appendChild(div)
 
