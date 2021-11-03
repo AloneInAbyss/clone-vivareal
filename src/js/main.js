@@ -30,6 +30,8 @@ async function doSearch(searchedTerm) {
 function disableResults() {
   fail.style.display = 'block'
   success.style.display = 'none'
+  const searchTerms = document.querySelector('.search-terms')
+  searchTerms.innerHTML = ''
 }
 
 function enableResults() {
@@ -37,3 +39,9 @@ function enableResults() {
   success.style.display = 'block'
   success.style.visibility = 'visible'
 }
+
+doSearch({
+  displayString: 'São Paulo - SP',
+  state: 'sp',
+  city: 'sao-paulo',
+})

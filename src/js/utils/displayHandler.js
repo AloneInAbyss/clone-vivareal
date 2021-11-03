@@ -32,4 +32,8 @@ export function searchDisplayHandler(realEstateList, searchKeyword) {
   location.append(displayString)
   location.appendChild(span)
   searchLocation.appendChild(location)
+
+  const searchTerms = document.querySelector('.search-terms')
+  searchTerms.innerText = displayString
+  searchTerms.append(span)
 }
