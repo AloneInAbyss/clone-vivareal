@@ -313,6 +313,27 @@ main {
   max-width: 1300px;
 }
 
+#search-successful {
+  visibility: hidden;
+}
+
+#search-failed {
+  display: none;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+#search-failed p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#search-failed span {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: red;
+}
+
 .search-result {
   width: 100%;
   padding-left: 2rem;
