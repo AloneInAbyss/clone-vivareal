@@ -257,7 +257,6 @@
 .card .photo {
   min-width: 350px;
   width: 350px;
-  height: 250px;
   object-fit: cover;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
