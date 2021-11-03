@@ -78,7 +78,7 @@
 
 .amenities {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   padding-bottom: 1rem;
   font-size: 0.8rem;
   color: #888;
