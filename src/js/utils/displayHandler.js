@@ -11,13 +11,15 @@ export function realEstateDisplayHandler(realEstateList) {
   })
 }
 
-export function searchDisplayHandler(realEstateList) {
+export function searchDisplayHandler(realEstateList, searchKeyword) {
   const totalCount = realEstateList.totalCount
-  const city = 'são paulo'
-  const state = 'sp'.toUpperCase()
+  const displayString = searchKeyword.displayString
 
   const searchResult = document.querySelector('#searchCount')
   searchResult.innerText = totalCount
+
+  const locationCityAndState = document.querySelector('#locationCityAndState')
+  locationCityAndState.innerText = displayString
 
   const searchLocation = document.querySelector('.properties-location')
   while (searchLocation.firstChild) {
@@ -27,7 +29,7 @@ export function searchDisplayHandler(realEstateList) {
   const location = document.createElement('p')
   const span = document.createElement('span')
   span.append('x')
-  location.append(city + ' - ' + state)
+  location.append(displayString)
   location.appendChild(span)
   searchLocation.appendChild(location)
 }

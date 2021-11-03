@@ -5,17 +5,20 @@ import {
   searchDisplayHandler,
 } from './utils/displayHandler.js'
 
-async function doSearch() {
-  const searchInput = document.querySelector('#text__location')
+const searchInput = document.querySelector('#text__location')
+searchInput.addEventListener('keyup', (e) => {
+  const userInput = e.target.value
+  const searchedTerm = getSearchLocation(userInput)
+  if (searchedTerm) {
+    doSearch(searchedTerm)
+  }
+})
 
-  const searchKeyword = getSearchLocation(searchInput)
+async function doSearch(searchedTerm) {
+  const searchKeyword = searchedTerm
 
   const realEstateList = await getRealEstateList(searchKeyword)
 
   realEstateDisplayHandler(realEstateList)
-  searchDisplayHandler(realEstateList)
-
-  console.log(realEstateList)
+  searchDisplayHandler(realEstateList, searchKeyword)
 }
-
-doSearch()
