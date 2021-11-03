@@ -10,6 +10,7 @@ export default class ListingHTMLFactory {
     price,
     suites,
     totalArea,
+    title,
   }) {
     this.photo = media
     this.address = address.street
@@ -18,6 +19,7 @@ export default class ListingHTMLFactory {
     this.city = address.city
     this.stateAcronym = address.state
     this.totalArea = totalArea
+    this.title = title
     this.bedrooms = bedrooms
     this.bathrooms = bathrooms
     this.slots = suites
@@ -43,6 +45,7 @@ export default class ListingHTMLFactory {
     const city = this.city
     const stateAcronym = this.stateAcronym
     const totalArea = this.totalArea
+    const title = this.title
     const bedrooms = this.bedrooms
     const bathrooms = this.bathrooms
     const slots = this.slots
@@ -77,11 +80,7 @@ export default class ListingHTMLFactory {
 
     const pTitle = document.createElement('p')
     pTitle.setAttribute('class', 'title')
-    pTitle.appendChild(
-      document.createTextNode(
-        `Apartamento com ${bedrooms} Quartos à Venda, ${totalArea}m²`
-      )
-    )
+    pTitle.appendChild(document.createTextNode(title))
     divCardBody.appendChild(pTitle)
 
     const divInfo = document.createElement('div')

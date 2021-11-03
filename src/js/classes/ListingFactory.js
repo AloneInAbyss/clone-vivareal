@@ -52,6 +52,7 @@ export default class ListingFactory {
       }
     })
 
+    const title = listing.link.name
     const totalArea = listing.listing.usableAreas.reduce((acc, cur) => cur, '0')
     const suites = listing.listing.suites.reduce((acc, cur) => cur, 0)
     const bathrooms = listing.listing.bathrooms.reduce((acc, cur) => cur, 0)
@@ -62,6 +63,7 @@ export default class ListingFactory {
 
     this.address = address
     this.amenities = amenities
+    this.title = title
     this.totalArea = totalArea
     this.suites = suites
     this.bathrooms = bathrooms
