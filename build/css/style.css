@@ -288,6 +288,7 @@
 }
 .amenities p {
   padding: 0.3rem;
+  text-align: center;
   background-color: #eee;
   margin-right: 0.7rem;
   border-radius: 15px;
