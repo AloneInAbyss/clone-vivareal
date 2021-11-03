@@ -89,5 +89,10 @@
     background-color: #eee;
     margin-right: 0.7rem;
     border-radius: 15px;
+    text-transform: lowercase;
+  }
+
+  p:first-letter {
+    text-transform: uppercase;
   }
 }

@@ -126,22 +126,13 @@ export default class ListingHTMLFactory {
     const divAmetinies = document.createElement('div')
     divAmetinies.setAttribute('class', 'amenities')
 
-    // const e_16 = document.createElement("p");
-    // e_16.appendChild(document.createTextNode("Ar-condicionado"));
-    // divAmetinies.appendChild(e_16);
-    // const e_17 = document.createElement("p");
-    // e_17.appendChild(document.createTextNode("Quadra poliesportiva"));
-    // divAmetinies.appendChild(e_17);
-    // const e_18 = document.createElement("p");
-    // e_18.appendChild(document.createTextNode("Spa"));
-    // divAmetinies.appendChild(e_18);
-    // const e_19 = document.createElement("p");
-    // e_19.appendChild(document.createTextNode("Salão de festas"));
-    // divAmetinies.appendChild(e_19);
-    // const e_20 = document.createElement("p");
-    // e_20.appendChild(document.createTextNode("Elevador"));
-    // divAmetinies.appendChild(e_20);
-    // divCardBody.appendChild(divAmetinies);
+    amenities.forEach((amenity) => {
+      const pAmenity = document.createElement('p')
+      pAmenity.appendChild(document.createTextNode(amenity))
+      divAmetinies.appendChild(pAmenity)
+    })
+
+    divCardBody.appendChild(divAmetinies)
 
     divCardText.appendChild(divCardBody)
 
