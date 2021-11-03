@@ -93,6 +93,26 @@
   .min-max-input {
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    .min-price,
+    .max-price {
+      position: absolute;
+      display: block;
+      background-color: #fff;
+      padding: 5px;
+      top: 15%;
+      z-index: 1;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    .min-price {
+      left: 10px;
+    }
+
+    .max-price {
+      left: 140px;
+    }
 
     input {
       text-align: right;

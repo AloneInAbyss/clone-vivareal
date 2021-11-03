@@ -124,6 +124,23 @@
 .form-input .min-max-input {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.form-input .min-max-input .min-price,
+.form-input .min-max-input .max-price {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  padding: 5px;
+  top: 15%;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form-input .min-max-input .min-price {
+  left: 10px;
+}
+.form-input .min-max-input .max-price {
+  left: 140px;
 }
 .form-input .min-max-input input {
   text-align: right;
